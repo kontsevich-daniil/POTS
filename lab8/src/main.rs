@@ -10,6 +10,6 @@ fn min<T: Ord>(a: T, b: T) -> T {
 
 fn main() {
     println!("{}", min(3, 5));          // 3
-    println!("{}", min(10, -1));        // -1
+    println!("{}", min(10, -13));        // -13
     println!("{}", min('b', 'a'));      // 'a'
 }

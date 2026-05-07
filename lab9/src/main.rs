@@ -37,6 +37,7 @@ fn main() {
     ctr.count(14);
     ctr.count(14);
     ctr.count(11);
+    ctr.count(15);
 
     for i in 10..20 {
         println!("Значение {} видели {} раз", i, ctr.times_seen(i));

@@ -38,10 +38,10 @@ where
 fn main() {
     let logger = Filter::new(
         StderrLogger,
-        |_verbosity, msg| msg.contains("yikes"),
+        |_verbosity, msg: &str| msg.contains("yikes"),
     );
 
-    logger.log(5, "FYI"); // не выведется
+    logger.log(5, "FYIyikes"); // не выведется
     logger.log(1, "yikes, something went wrong"); // выведется
     logger.log(2, "uhoh"); // не выведется
 }

@@ -137,13 +137,13 @@ fn parse_message<'a, T: ProtoMessage<'a>>(mut data: &'a [u8]) -> T {
     result
 }
 
-#[derive(Debug, Default)]
+#[derive(Debug, Default, PartialEq)]
 struct PhoneNumber<'a> {
     number: &'a str,
     type_: &'a str,
 }
 
-#[derive(Debug, Default)]
+#[derive(Debug, Default, PartialEq)]
 struct Person<'a> {
     name: &'a str,
     id: u64,
